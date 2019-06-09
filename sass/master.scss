@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #404560;
+}
+
+.container {
+    background: #e4e4e4;
+    max-width: 80rem;
+    width: calc(100% - 6rem);
+    margin: 0 auto;
+}
+
+div[class^='col-'] {
+    background: pink;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$columns: 12;
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+    }
+}
+
+// .col-12 {
+//     //ei kasva, ei kahane, võtab 100% laiust
+//     flex: 0 0 100%;
+// }
+// .col-11 {
+//     // ei kasva, ei kahane, võtab ainult 11 osa 12st
+//     flex: 0 0 calc(100% / 12 * 11);
+// }
+// .col-1 {
+//     flex: 0 0 calc(100% / 12 * 1);
+// }
+// .col-10 {
+//     flex: 0 0 calc(100% / 12 * 10);
+// }
+// .col-2 {
+//     flex: 0 0 calc(100% / 12 * 2);
+// }
+// .col-9 {
+//     flex: 0 0 calc(100% / 12 * 9);
+// }
+// .col-3 {
+//     flex: 0 0 calc(100% / 12 * 3);
+// }
+// .col-8 {
+//     flex: 0 0 calc(100% / 12 * 8);
+// }
+// .col-4 {
+//     flex: 0 0 calc(100% / 12 * 4);
+// }
+// .col-7 {
+//     flex: 0 0 calc(100% / 12 * 7);
+// }
+// .col-5 {
+//     flex: 0 0 calc(100% / 12 * 5);
+// }
+// .col-6 {
+//     flex: 0 0 calc(100% / 12 * 6);
+// }
+// .col-6 {
+//     flex: 0 0 calc(100% / 12 * 6);
+// }
