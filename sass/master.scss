@@ -26,9 +26,13 @@ div[class^='col-'] {
     flex-wrap: wrap;
 }
 
+// Define number of columns
 $columns: 12;
+// Start with the value of $i = 1 and end with $i = number of columns
 @for $i from 1 through $columns {
+    // append to class .col a value of $i
     .col-#{$i} {
+        // flex grow 0, shrink 0 and width is $i/12, so based on value of $i column width is 1,6 or 12/12
         flex: 0 0 100% / $columns * $i;
     }
 }
