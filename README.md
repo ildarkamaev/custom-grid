@@ -12,11 +12,8 @@ I built a custom layout grid.
 * SASS
 
 ## What I learned
-* How to make a hamburger menu navbar using CSS using span and ::before/after classes
-* Using checkbox and styling it for use in navbars is handy
-* How to create cool underline hover effect using ::before pseudo-classes
-* How to use media querys with Sass @content
-* How to customize Font-awesome 
+* How to create custom 12-col grid
+* How to use SASS @for to create grid automatically
 
 ## Problems/Mistakes
 * No Problems
@@ -29,6 +26,6 @@ Pretty much use it however you like.
 
 ## Acknowledgments
 
-* Based on: [Create a responsive navigation with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA) 
-* [Font Awesome](https://fontawesome.com/)
+* Based on: [Create a Custom Grid System with CSS Calc() and Sass](https://www.youtube.com/watch?v=J4fAqATYEr0&t=201s) 
+
 
